@@ -1,0 +1,699 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #222;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background-color: #1f2937;
+  padding: 16px 0;
+}
+
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: #60a5fa;
+}
+
+/* =========================
+   COMMON
+========================= */
+
+.page-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.page-container h1 {
+  margin-bottom: 25px;
+}
+
+/* =========================
+   HOME
+========================= */
+
+.home-page {
+  width: 100%;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #e8f1ff;
+}
+
+.hero-section h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.hero-section p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.features-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h2 {
+  margin-bottom: 15px;
+  color: #2563eb;
+}
+
+.feature-card p {
+  line-height: 1.6;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.primary-button {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 11px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.primary-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* =========================
+   RESOURCE FILTER
+========================= */
+
+.filter-section {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-section input,
+.filter-section select {
+  padding: 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.filter-section input {
+  width: 280px;
+}
+
+.filter-section button {
+  padding: 11px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter-section button:hover {
+  background-color: #1d4ed8;
+}
+
+/* =========================
+   RESOURCES GRID
+========================= */
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.resource-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.resource-card h2 {
+  margin-bottom: 18px;
+  color: #1f2937;
+}
+
+.resource-card p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.resource-card .primary-button {
+  margin-top: 10px;
+}
+
+/* =========================
+   RESOURCE DETAILS
+========================= */
+
+.resource-details {
+  background-color: white;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.resource-details p {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.resource-details .primary-button {
+  margin-top: 10px;
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.error-message {
+  color: #dc2626;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-section {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-section h1 {
+    font-size: 30px;
+  }
+
+  .filter-section {
+    flex-direction: column;
+  }
+
+  .filter-section input {
+    width: 100%;
+  }
+}
+/* =========================
+   SECONDARY BUTTON
+========================= */
+
+.secondary-button {
+  padding: 11px 20px;
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.secondary-button:hover {
+  background-color: #4b5563;
+}
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+.empty-message {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.empty-message h3 {
+  margin-bottom: 10px;
+}
+
+.empty-message p {
+  color: #666;
+}
+/* =========================
+   MY BOOKINGS
+========================= */
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.booking-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.booking-card h2 {
+  margin-bottom: 18px;
+  color: #1f2937;
+}
+
+.booking-card p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.cancel-button {
+  margin-top: 10px;
+  padding: 11px 20px;
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.cancel-button:hover {
+  background-color: #b91c1c;
+}
+
+.success-message {
+  color: #16a34a;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .bookings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   BOOKING PAGE
+========================= */
+
+.booking-resource {
+  background-color: white;
+  max-width: 700px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.booking-resource h2 {
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+.booking-resource p {
+  margin-bottom: 8px;
+}
+
+.booking-form {
+  background-color: white;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.booking-form .primary-button {
+  margin-top: 5px;
+}
+
+.success-message {
+  color: #16a34a;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+/* =========================
+   BOOKING CONFIRMATION
+========================= */
+
+.booking-success {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.booking-success h1 {
+  color: #16a34a;
+  margin-bottom: 15px;
+}
+
+.confirmation-card {
+  background-color: white;
+  padding: 30px;
+  margin: 25px 0;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.confirmation-card h2 {
+  margin-bottom: 20px;
+}
+
+.confirmation-card p {
+  margin-bottom: 12px;
+}
+
+
+/* =========================
+   MY BOOKINGS
+========================= */
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.booking-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.booking-card h2 {
+  margin-bottom: 18px;
+  color: #1f2937;
+}
+
+.booking-card p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.cancel-button {
+  margin-top: 10px;
+  padding: 11px 20px;
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.cancel-button:hover {
+  background-color: #b91c1c;
+}
+
+.status-upcoming {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.status-cancelled {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.status-completed {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .bookings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   ADMIN PAGE
+========================= */
+
+.admin-section {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-section h2 {
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+.admin-form {
+  max-width: 700px;
+}
+
+.admin-form .primary-button {
+  margin-right: 10px;
+}
+
+.admin-cancel-edit {
+  margin-top: 10px;
+}
+
+.admin-resource-list {
+  display: grid;
+  gap: 20px;
+}
+
+.admin-resource-card {
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.admin-resource-card h3 {
+  margin-bottom: 12px;
+}
+
+.admin-resource-card p {
+  margin-bottom: 8px;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.edit-button {
+  padding: 11px 20px;
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #d97706;
+}
+
+.admin-bookings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.admin-booking-card {
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.admin-booking-card h3 {
+  margin-bottom: 15px;
+}
+
+.admin-booking-card p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .admin-resource-card {
+    flex-direction: column;
+  }
+
+  .admin-actions {
+    align-items: stretch;
+  }
+
+  .admin-bookings {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   ADMIN RESOURCE FORM
+========================= */
+
+.admin-section {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.admin-section h2 {
+  margin-bottom: 20px;
+}
+
+.resource-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.resource-form input,
+.resource-form select,
+.resource-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.resource-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.resource-form input:focus,
+.resource-form select:focus,
+.resource-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.resource-form button {
+  padding: 11px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  background: #2563eb;
+  color: white;
+}
+
+.resource-form button:hover {
+  background: #1d4ed8;
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Conference Room A",
+    "type": "Meeting Room",
+    "location": "First Floor",
+    "capacity": 10,
+    "description": "Meeting room suitable for team meetings and discussions.",
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Projector 1",
+    "type": "Projector",
+    "location": "AV Room",
+    "capacity": 50,
+    "description": "HD projector for presentations and workshops.",
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Camera 1",
+    "type": "Camera",
+    "location": "Media Room",
+    "capacity": 5,
+    "description": "Digital camera for events and media activities.",
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "Computer Lab A",
+    "type": "Laboratory",
+    "location": "Second Floor",
+    "capacity": 30,
+    "description": "Computer laboratory suitable for training and workshops.",
+    "available": true
+  },
+  {
+    "id": 5,
+    "name": "Seminar Hall",
+    "type": "Seminar Hall",
+    "location": "Ground Floor",
+    "capacity": 100,
+    "description": "Large hall for seminars, workshops and events.",
+    "available": true
+  }
+]

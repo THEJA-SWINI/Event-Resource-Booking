@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1789220182194,
+    "resourceId": 1,
+    "resourceName": "Conference Room A",
+    "date": "2056-02-01",
+    "startTime": "12:05",
+    "endTime": "16:25",
+    "purpose": "hhhj",
+    "userId": "user1",
+    "userName": "k;jjljlj",
+    "userEmail": "sss@gmail.com",
+    "status": "cancelled"
+  },
+  {
+    "id": 1789268576589,
+    "resourceId": 2,
+    "resourceName": "Projector 1",
+    "date": "2028-05-02",
+    "startTime": "14:58",
+    "endTime": "16:07",
+    "purpose": "project presenation",
+    "userId": "user1",
+    "userName": "Thejaswini",
+    "userEmail": "sss@gmail.com",
+    "status": "upcoming"
+  }
+]
